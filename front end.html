@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #1805db ;
+}
+
+li {
+  float: left;
+  border-right:1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+.navegador {
+  height: 100%; 
+  width: 160px; 
+  position: absolute; 
+  top: 20%;
+  left: 0;
+  overflow-x: hidden; 
+  padding-top: 150px;
+}
+
+
+.navegador a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  display: block;
+}
+
+.lhoriz {
+  border-left: 2px  solid black;
+  height: 700px;
+  position: absolute;
+  left: 12.8%;
+  margin-left: -3px;
+  
+}
+.menu {
+  overflow: hidden;
+  background-color: #e9e9e9;
+}
+
+.menu a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.menu a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.menu a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+.busqueda1{
+	top: 200px;
+	position:absolute;
+}
+
+.busqueda2{
+	height: 30px;
+    margin: 2;
+	border-left: 2px  solid black
+	
+    }
+.linea1 {
+	 top: 830px;
+	 position:absolute;
+	 width: 1900px;
+	 
+}
+
+hr.linea2 {
+	border: 1px solid grey;
+	height:10px;
+	background-color: grey ;
+}
+
+</style>
+</head>
+<body color="#d6fffe">
+	<table border=0 width="100%" align=center>
+		<tr>
+			<td><h1 align="right">COMPETITION</h1></td>
+			<td align=right><h3>username: Systems</h3></td>
+		</tr>
+	</table> 
+	<ul>
+	<!--Barra de menu principal-->
+		<li><a class="Home" href="front end.html">Home</a></li>
+		<li><a href="Contest">Contest</a></li>
+		<li><a href="Option">Option</a></li>
+		<li style="float:right"><a href="">LogOut</a></li>
+	</ul>
+	<!--Navegador lateral-->
+	<div class="navegador">
+	  <a href="#">About</a>
+	  <a href="#">Competitions</a>
+	  <a href="#">Records</a>
+	  <a href="#">Rankin</a>
+	 
+	</div>
+	<!--Campo de busqueda-->
+	<div class="busqueda1">
+	  <input type="text" class="busqueda2" placeholder="Busqueda google..">
+	</div>
+	<div class="lhoriz"></div>
+	<div class="linea1">
+		<hr class="linea2">
+	</div>	
+</body>
+</html>
